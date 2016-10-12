@@ -1,23 +1,35 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <body>
-	<div id='header'>
-	<h2 id='logo' onclick='displayText()'>DPI</h2>
-	<h4 class='headertext'>Home</h4>
-	<h4 class='headertext'>Sign Up</h4>
+	<div id='headerstay'>
+		<div id='header'>
+			<h2 id='logo' onclick='displayText()'>DPI</h2>
+			<h4 class='headertext'>Home</h4>
+			<h4 class='headertext'>Sign Up</h4>
+		</div>
+	</div>
+	<div id='body2'>
+		<img id ='img1' src="http://i.ytimg.com/vi/dm386jdta-0/maxresdefault.jpg" />
 	</div>
 	<div id='body1'>
 		<h1>Welcome to DPI.</h1>
 		<h3>What we do</h3>
 		<ul>
-			<li>We provide you with multiple options of removing you enemies</li>
-			<li></li>
-			<li></li>
+			<li>We provide you with multiple options of removing your enemies</li>
+			<li>We are cheap, reliable, and always there</li>
 		</ul>
+		<h3>Pricing</h3>
+		<div id="pricing">
+			
+			
+				<p>Swarm: 3,000 GC</p>
+				<p>2 Swarm Carrier: 20,000 GC</p>
+				<p>Wayfarer: 6,000,000 GC</p>
+			</ul>
+		</div>
 		<h1 id ='title1'></h1>
 		<p id='opening'></p>
-	<div id='body2'>
-	</div>
+	
 	<div id='body3'>
 	</div>
 	
@@ -27,20 +39,22 @@
 	#header{
 		background-color:#808080;
 		width:100%;
-		height:5%;
-		
+		height:70px;
+		margin:0;
+		top:0px;
 	}
 	#header > *{display:inline-block;}
 	.headertext {
 	font-family:Futura,Trebuchet MS,Arial,sans-serif;
 	padding:3px;
-	margin-right:10px;
+	margin-right:100px;
 	border-right: solid black 1px;
 	border-left: solid black 1px;
+	
 	}
 	#logo{
 	font-family:Futura,Trebuchet MS,Arial,sans-serif;
-	margin-right:10px;
+	margin-right:100px;
 	font-size:20px;
 	cursor:pointer;
 	}
@@ -55,6 +69,25 @@
 	}
 	html{
 		background-color:#A4A4A4;
+	}
+	#img1{
+		top:60px;
+		height:100%;
+		width:100%;
+		position:absolute;
+		z-index:-1;
+	}
+	#headerstay > *{position:fixed;}
+	#body1{
+		position:absolute;
+		top:100px;
+		color:white;
+		font-family:Futura,Trebuchet MS,Arial,sans-serif;
+		left:100px;
+		z-index:-1;
+	}
+	#pricing > *{
+	display:inline-block;
 	}
 </style>
 <script>
